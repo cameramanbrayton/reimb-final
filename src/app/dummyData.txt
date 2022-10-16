@@ -1,0 +1,27 @@
+/*this.usersResponse = [{
+      "id": "1",
+      "givenName": "John",
+      "surname": "Doe",
+      "email": "admin@fakemail.com",
+      "username": "defaultAdmin",
+      "role": "1",
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "givenName": "Jane",
+      "surname": "Doe",
+      "email": "financemanager@fakemail.com",
+      "username": "defaultFinanceManager",
+      "role": "2",
+      "isActive": true
+    },
+    {
+      "id": "3",
+      "givenName": "Bobby",
+      "surname": "Doe",
+      "email": "employee@fakemail.com",
+      "username": "defaultEmployee",
+      "role": "3",
+      "isActive": true
+    }];*/
