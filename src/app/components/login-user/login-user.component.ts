@@ -36,13 +36,22 @@ export class LoginUserComponent implements OnInit {
       console.log(data.body);
       console.log(this.as.user);
       
-      /*if (this.as.user.role == 'admin') {
-      this.router.navigate(['/users']);
+      /* loginFunction() {
+    console.log(this.credentials);
+    this.as.login(this.credentials).subscribe((data: any) => {
+      this.as.user = data.body;
+      console.log(data.body);
+      console.log(this.as.user);
+      if (this.as.user.role == 'admin') {
+        this.router.navigate(['users']);
       } else if (this.as.user.role == 'finance manager') {
-      this.router.navigate(['/reimbursements']);
+        this.router.navigate(['reimbursement']);
       } else if (this.as.user.role == 'employee') {
-      this.router.navigate(['users']);
-      }*/
+        this.router.navigate(['users']);
+      }
+    });
+  }
+}*/
 
 
     },error=>alert("Sorry, please enter correct username and password"));
