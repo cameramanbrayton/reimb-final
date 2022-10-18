@@ -5,10 +5,11 @@ import { AppComponent } from './app.component';
 import { ReimbursementListComponent } from './components/reimbursement-list/reimbursement-list.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { CreateReimbursementComponent } from './components/create-reimbursement/create-reimbursement.component';
-import { CreateUserComponent } from './components/create-user/create-user.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginUserComponent } from './components/login-user/login-user.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 
 @NgModule({
@@ -19,6 +20,8 @@ import { LoginUserComponent } from './components/login-user/login-user.component
     ReimbursementListComponent,
     CreateReimbursementComponent,
     CreateUserComponent,
+    UpdateUserComponent,
+    
     
   ],
   imports: [

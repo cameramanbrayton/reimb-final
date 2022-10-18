@@ -26,7 +26,7 @@ export class LoginUserComponent implements OnInit {
     this.as.login(this.credentials).subscribe((data: any) => {
       alert("Login Successful")
       //if (this.as.user.role == 'admin') {
-        this.router.navigate(['/users']);
+        this.router.navigate(['/users/']);
         //} else if (this.as.user.role == 'finance manager') {
         //this.router.navigate(['/reimbursements']);
         //} else if (this.as.user.role == 'employee') {

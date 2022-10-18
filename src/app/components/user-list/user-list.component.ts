@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { EmployeeService } from 'src/app/employee.service';
 import { UserResponse } from 'src/app/models/user-response';
 
@@ -11,7 +12,9 @@ export class UserListComponent implements OnInit {
 
   usersResponse!: UserResponse[];
 
-  constructor(private employeeService: EmployeeService) { }
+
+  constructor(private employeeService: EmployeeService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.getUsersResponse();
@@ -22,5 +25,9 @@ export class UserListComponent implements OnInit {
       this.usersResponse = data;
     });
     
+  }
+
+  updateUser(isActive: boolean){
+    this.router.navigate(['users/update-user', isActive]);
   }
 }

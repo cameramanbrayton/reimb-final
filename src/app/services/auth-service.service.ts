@@ -18,6 +18,7 @@ export class AuthServiceService {
     email: '',
     username: '',
     role: '',
+    password: '',
     isActive: false,
   };
 
